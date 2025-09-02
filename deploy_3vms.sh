@@ -21,10 +21,10 @@ VM_SIZE_MEDIUM="Standard_B2s"
 IMAGE="Ubuntu2204"
 
 # Databasvariabler
-DB_ROOT_PASSWORD="SecurePass2024!"
-DB_NAME="contactdb"
-DB_USER="webuser"
-DB_PASSWORD="WebUser2024!"
+DB_ROOT_PASSWORD=""
+DB_NAME=""
+DB_USER=""
+DB_PASSWORD=""
 
 echo "Skapar säker Azure-arkitektur med bastion host och reverse proxy..."
 
@@ -538,4 +538,5 @@ echo "För att administrera den privata webbservern:"
 echo "   1. SSH till bastion: ssh $ADMIN_USER@$BASTION_IP"
 echo "   2. Från bastion SSH till webserver: ssh $ADMIN_USER@$WEB_PRIVATE_IP"
 echo ""
+
 echo "Testa webbapplikationen på: http://$PROXY_IP"
